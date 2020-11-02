@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body {
+    background-color: #b3cdd1;
+    /* background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%); */
+    height: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 3px solid white;
+    border-radius: 7px;
+    overflow: auto;
+}
+
+.thumb {
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}
